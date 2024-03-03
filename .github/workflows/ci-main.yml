@@ -32,8 +32,6 @@ jobs:
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
         restore-keys: |
           ${{ runner.os }}-gradle-
-
-    ### CI
     #gradlew 권한 추가
     - name: Grant Execute Permission For Gradlew
       run: chmod +x gradlew
